@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { hot } from 'react-hot-loader';
+import { AppShell } from '../app-shell/AppShell';
 
 class App extends React.Component {
-    render = () => {
+    render() {
         return (
-            <div>
+            <AppShell>
                 <h1>App 1</h1>
-            </div>
+            </AppShell>
         );
     }
 }
