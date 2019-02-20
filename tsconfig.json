@@ -1,0 +1,20 @@
+{
+    "compilerOptions":{
+        "lib": [
+            "dom",
+            "es5",
+            "scripthost",
+            "es2015.promise" // Default libraries for building in ES5, plus the additional promise library required by RxJs
+        ],
+        "outDir":"./dist/",     
+        "sourceMap":true, 
+        "module": "commonjs", // This needs to be set to commonjs, otherwise for some reason the hot-reload-loader loses components state when reloading
+        "moduleResolution": "node", // This allows Typescript to load type declarations supplied alongside npm packages
+        "noImplicitAny": false, // Tells tsc to warn us if any variables are inferred as having a type of any
+        "target":"es5",
+        "jsx":"react",
+        "allowJs":true             
+    },
+    "exclude":["node_modules"]
+   
+} 
