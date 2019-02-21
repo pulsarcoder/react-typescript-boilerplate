@@ -3,7 +3,9 @@ import * as React from 'react';
 export default (props) => {
     return (
         <aside className="sidebar">
-            <h1>Hey im sidebar</h1>
+            <div>
+                <h2>Hey im sidebar</h2>
+            </div>
         </aside>
     );
 }

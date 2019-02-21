@@ -1,7 +1,7 @@
 import { UserModel } from "../models/UserModel";
 import Axios, { AxiosPromise } from 'axios';
 import env from '../../../environment';
-import { HttpService } from "../../../core/services/HttpService";
+import { HttpService } from "../../core/services/HttpService";
 
 export abstract class IUserService {
     public abstract getUserDetails(username: string): AxiosPromise<UserModel>;
